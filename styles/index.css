@@ -24,17 +24,19 @@ main{
     position: relative;
 }
 .images{
+    min-width: 500vw;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(5,1fr);
     overflow-x: scroll;
     scroll-behavior: smooth;
 }
 .images::-webkit-scrollbar{
     display: none;
 }
-.images div img{
+.images img{
     object-fit: cover;
     width: 100%;
+    /* transform: translateX(50%); */
     transition: transform 0.5s;
 }
 #back-btn, #next-btn{

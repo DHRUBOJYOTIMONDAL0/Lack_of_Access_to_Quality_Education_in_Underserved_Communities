@@ -22,6 +22,7 @@ main{
 .image-section{
     width: 100%;
     position: relative;
+    /* border: 10px solid red; */
 }
 .images{
     min-width: 500vw;
@@ -36,7 +37,6 @@ main{
 .images img{
     object-fit: cover;
     width: 100%;
-    /* transform: translateX(50%); */
     transition: transform 0.5s;
 }
 #back-btn, #next-btn{

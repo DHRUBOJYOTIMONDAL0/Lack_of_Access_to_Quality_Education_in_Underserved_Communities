@@ -28,12 +28,13 @@ main{
     min-width: 500vw;
     display: grid;
     grid-template-columns: repeat(5,1fr);
-    overflow-x: scroll;
-    scroll-behavior: smooth;
+    /* overflow-x: hin; */
+    overflow:hidden;
+    /* scroll-behavior: smooth; */
 }
-.images::-webkit-scrollbar{
+/* .images::-webkit-scrollbar{
     display: none;
-}
+} */
 .images img{
     object-fit: cover;
     width: 100%;
@@ -55,4 +56,17 @@ main{
 }
 #back-btn:hover, #next-btn:hover{
     background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Announcement Section */
+
+.announcement-text{
+    width: 100%;
+    margin-block:5px;
+    background: rgb(24, 85, 183);
+}
+.announcement-text > h1{
+    padding-block: 10px;
+    padding-inline:5px;
+    text-align: center;
 }

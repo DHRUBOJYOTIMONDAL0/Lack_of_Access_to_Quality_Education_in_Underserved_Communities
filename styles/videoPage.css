@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8c5c5;
+    margin: 0;
+}
+
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px; /* Hidden by default */
+    background-color: #fff;
+    padding-top: 20px;
+    transition: 0.3s;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: block;
+}
+
+.sidebar .closebtn {
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    margin: 10px;
+    background-color: #fff;
+    border: none;
+}
+
+#main {
+    transition: margin-left 0.3s; /* Transition effect for main content */
+    padding: 16px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.section {
+    background-color: #d3d3d3;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.raise-doubt {
+    background-color: #4A76FF;
+    color: white;
+}

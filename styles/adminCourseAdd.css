@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9c6cc;
+}
+
+.hidden{
+    visibility: hidden;
+}
+.container {
+    display: flex;
+}
+#ham-burger-copy{
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    z-index: 10;
+    cursor: pointer;
+}
+.sidebar {
+    width: 200px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.sidebar.hidden {
+    transform: translateX(-100%);
+}
+
+.menu-icon {
+    font-size: 24px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.menu-item {
+    margin: 15px 0;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    margin: 10px 0;
+}
+
+.add-button {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-button:hover {
+    background-color: #0056b3;
+}
+
+.section {
+    background-color: #e3e3e3;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+}

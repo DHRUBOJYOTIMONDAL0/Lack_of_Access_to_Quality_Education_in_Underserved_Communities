@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/teacherDashboard.css">
+    <title>Teacher Dashboard</title>
+</head>
+<body>
+    <div class="sidebar">
+        <header class="header">
+            <h1>Teacher Dashboard</h1>
+        </header>
+        <nav class="nav">
+            <a href="#" class="active">Home</a>
+            <a href="#">Live Classes Schedule</a>
+            <a href="#">List of Doubts</a>
+            <a href="#">Answer Sheet Checking</a>
+        </nav>
+    </div>
+
+    <div class="content">
+        <div class="form-section">
+            <h2>#REQUEST ID MODULE</h2>
+            <label for="subject">#Subject:</label>
+            <input type="text" id="subject" placeholder="#Subject">
+            <label for="doubt">Doubt:</label>
+            <textarea id="doubt" placeholder="Write your doubt here..."></textarea>
+            <div class="response-section">
+                <label for="response">Answer:</label>
+                <input type="text" id="response" placeholder="Teacher ID">
+                <input type="date" id="date">
+            </div>
+            <button id="submitBtn">Submit</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

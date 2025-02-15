@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doubts Submission</title>
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/doubts.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h1>Doubts</h1>
+        <div class="request-id">
+            <label for="request-id">#REQUEST ID</label>
+            <input type="text" id="request-id">
+        </div>
+        <div class="module">
+            <label for="module">MODULE</label>
+            <input type="text" id="module">
+        </div>
+        <div class="doubt">
+            <label for="doubt">DOUBT</label>
+            <textarea id="doubt"></textarea>
+        </div>
+        <h2>History</h2>
+        <div class="new-doubts">
+            <h2>NEW DOUBTS</h2>
+            <label for="subject">#SUBJECT</label>
+            <input type="text" id="subject">
+            <label for="description">#DOUBT DESCRIPTION</label>
+            <textarea id="description"></textarea>
+            <div class="image-upload">
+                <input type="file" accept="image/*" id="image-upload">
+                <label for="image-upload">ADD IMAGE</label>
+            </div>
+            <button id="raise-ticket">RAISE TICKET</button>
+        </div>
+    </div>
+    <script src="../scripts/doubts.js"></script>
+</body>
+</html>

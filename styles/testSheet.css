@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8d1d1;
+    margin: 0;
+}
+
+nav > ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 1px 10px 1px rgba(0, 0, 0,0.5);
+}
+nav > ul > li{
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile a {
+    color: white;
+    text-decoration: none;
+}
+
+.content {
+    padding: 2rem;
+}
+
+.table-section {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #302626;
+}
+
+th {
+    background-color: #8e2b2b;
+    color: white;
+}
+
+.show-marks {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.marks-btn:hover {
+    background-color: #45a049;
+}

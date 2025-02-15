@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F8C8C8; /* Light Pink */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.header {
+    background-color:#8e2b2b;; /* Bright Red */
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.content {
+    padding: 20px;
+}
+
+.card {
+    background-color: #E3FFB4; /* Light Yellow */
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.request-id, .subject, .module, .doubt, .answer-date {
+    margin: 10px 0;
+}
+
+.delete-button {
+    background-color: #8e2b2b;; /* Dark Red */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.delete-button:hover {
+    background-color: #B00000; /* Red Hover */
+    transform: scale(1.05);
+}

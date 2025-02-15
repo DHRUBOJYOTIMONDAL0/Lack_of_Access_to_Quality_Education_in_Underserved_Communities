@@ -1,0 +1,70 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f8f9fa;
+}
+
+.sidebar {
+    /* width: 300px; */
+	background: rgba(40, 149, 212, 0.5);
+	padding: 15px;
+    min-height: 100vh;
+	/* position: fixed; */
+}
+
+h1,
+h2 {
+    color: #c0392b;
+}
+
+label {
+    display: block;
+	margin-top: 10px;
+}
+
+input[type='text'],
+textarea {
+    width: 100%;
+	padding: 8px;
+	margin-top: 5px;
+}
+
+textarea {
+    height: 60px;
+	resize: none;
+}
+
+.image-upload {
+    display: flex;
+	align-items: center;
+	margin-top: 10px;
+}
+
+#raise-ticket {
+    background-color: #27ae60;
+	color: white;
+	padding: 10px;
+	border: none;
+	cursor: pointer;
+	margin-top: 15px;
+}
+
+#raise-ticket:hover {
+    background-color: #219653;
+}
+@media screen and (min-width: 1000px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    .sidebar {
+        min-height: 100%;
+        /* transform: scale(1.5,1.25); */
+        padding: 2.5rem 12rem;
+        border-radius: 25px;
+        box-shadow: 1px 1px 8px 3px rgba(0, 0, 0, 0.5);
+    }
+}

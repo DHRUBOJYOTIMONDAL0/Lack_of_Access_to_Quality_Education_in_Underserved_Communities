@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/teacherVideo.css">
+    <title>Student Chat and Video</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Home Dashboard</h1>
+        </header>
+        
+        <section class="video-section">
+            <h2>Live Video or Recorded Lecture</h2>
+            <div class="video-wrapper" id="videoWrapper" onclick="toggleVideo()">
+                <video id="lectVideo" controls preload="none" style="display:none;">
+                    <source src="https://youtu.be/m6azhgyCi-k?si=DVOZXlzm9NUq7Olm" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <img src="thumbnail.jpg" id="videoThumbnail" alt="Video Thumbnail" />
+            </div>
+        </section>
+
+        <section class="chat-section">
+            <h2>Live Chat</h2>
+            <div class="chatbox" id="chatbox">
+                <div class="chat-message student">Hi there!</div>
+                <div class="chat-message student">How do I submit my assignment?</div>
+                <div class="chat-message student">Is there a deadline for the project?</div>
+            </div>
+            <input type="text" id="chatInput" placeholder="Type your message..." />
+            <button onclick="sendMessage()">Send</button>
+        </section>
+    </div>
+
+    <script src="../scripts/teacherVideo.js"></script>
+</body>
+</html>

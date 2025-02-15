@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/adminDashboard.css">
+    <title>Admin Dashboard</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Admin Dashboard</h1>
+        </header>
+        
+        <section class="section users-details">
+            <h2>Users Details</h2>
+            <div class="dropdown">
+                <button class="btn" onclick="toggleDropdown('studentDropdown')">Students List</button>
+                <div id="studentDropdown" class="dropdown-content">
+                    <p>Student 1</p>
+                    <p>Student 2</p>
+                    <p>Student 3</p>
+                </div>
+            </div>
+            
+            <div class="dropdown">
+                <button class="btn" onclick="toggleDropdown('teacherDropdown')">Teachers List</button>
+                <div id="teacherDropdown" class="dropdown-content">
+                    <p>Teacher 1</p>
+                    <p>Teacher 2</p>
+                    <p>Teacher 3</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section course-details">
+            <h2>Course Details</h2>
+            <div class="dropdown">
+                <button class="btn" onclick="toggleDropdown('courseDropdown')">Add Course</button>
+                <div id="courseDropdown" class="dropdown-content">
+                    <p>Course 1</p>
+                    <p>Course 2</p>
+                    <p>Course 3</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="../scripts/adminDashboard.js"></script>
+</body>
+</html>
